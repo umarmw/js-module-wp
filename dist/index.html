@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Modules Events using Webpack</title>
+  <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Modules events using webpack</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="score-center">
+          <!-- login button -->
+          <a class="score-button btn btn-primary" data-ux-module="score_bootstrap/Components/Button" data-ux-state="loaded" href="http://pggrowingfamilies/sitecore/content/home" data-clickMessagesTransmitting="open modal login" data-stateChangeMessagesTransmitting="transmit"
+            data-showActionMessages="" data-hideActionMessages="">Login</a>
+
+          <!-- register button -->
+          <a class="score-button btn btn-primary" data-ux-module="score_bootstrap/Components/Button" data-ux-state="loaded" href="http://pggrowingfamilies/sitecore/content/home" data-clickMessagesTransmitting="open modal register" data-stateChangeMessagesTransmitting="transmit"
+            data-showActionMessages="" data-hideActionMessages="">Register</a>
+
+          <!-- login modal -->
+          <div aria-hidden="true" aria-labelledby="modal-1d5cbba7-3321-4890-aa80-67203d43d169-Label" class="modal fade score-modal" data-ux-module="score_bootstrap/Components/Modal" data-ux-state="loaded" id="modal-1d5cbba7-3321-4890-aa80-67203d43d169" role="dialog"
+            tabindex="-1" data-stateChangeMessages="" data-onShowMessagePerformer="open modal login" data-onHideMessagePerformer="close modal login" data-onShowMessagesTransmitter="" data-onHideMessageTransmitter="" style="display: none;">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header" id="modal-1d5cbba7-3321-4890-aa80-67203d43d169-Label">
+                  Login
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                  <h1>Login to your account</h1>
+                  <form class="form-horizontal">
+                    <div style="margin-bottom:10px;">
+                      <input type="text" name="user" placeholder="Username" class="form-control">
+                    </div>
+                    <div style="margin-bottom:10px;">
+                      <input type="password" name="pass" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="">
+                      <input type="submit" name="login" class="btn btn-success" value="Login">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer score-call-to-action">
+                  <!-- close login button -->
+                  <a class="score-button btn btn-primary" data-ux-module="score_bootstrap/Components/Button" data-ux-state="loaded" href="http://pggrowingfamilies/sitecore/content/home" data-clickMessagesTransmitting="close modal login" data-stateChangeMessagesTransmitting="transmit"
+                    data-showActionMessages="" data-hideActionMessages="">Close</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Register modal -->
+          <div aria-hidden="true" aria-labelledby="modal-1d5cbba7-3321-4890-aa80-67203d43d169-Label" class="modal fade score-modal" data-ux-module="score_bootstrap/Components/Modal" data-ux-state="loaded" id="modal-1d5cbba7-3321-4890-aa80-67203d43d169" role="dialog"
+            tabindex="-1" data-stateChangeMessages="" data-onShowMessagePerformer="open modal register" data-onHideMessagePerformer="close modal register" data-onShowMessagesTransmitter="" data-onHideMessageTransmitter="" style="display: none;">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header" id="modal-1d5cbba7-3321-4890-aa80-67203d43d169-Label">
+                  Register
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+
+                  <h1>Register to your account</h1><br>
+                  <form class="form-horizontal">
+                    <div style="margin-bottom:10px;">
+                      <input type="text" name="user" placeholder="Username" class="form-control">
+                    </div>
+                    <div style="margin-bottom:10px;">
+                      <input type="password" name="pass" placeholder="Password" class="form-control">
+                    </div>
+                    <div class="">
+                      <input type="submit" name="register" class="btn btn-success" value="Register">
+                    </div>
+                  </form>
+
+                </div>
+                <div class="modal-footer score-call-to-action">
+                  <!-- close register button -->
+                  <a class="score-button btn btn-primary" data-ux-module="score_bootstrap/Components/Button" data-ux-state="loaded" href="http://pggrowingfamilies/sitecore/content/home" data-clickMessagesTransmitting="close modal register" data-stateChangeMessagesTransmitting="transmit"
+                    data-showActionMessages="" data-hideActionMessages="">Close</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- webpack bundle -->
+  <script src="./bundle.js"></script>
+</body>
+
+</html>

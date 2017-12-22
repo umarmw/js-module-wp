@@ -1,0 +1,32 @@
+{
+  "name": "js-wp-bundle",
+  "version": "1.0.0",
+  "description": "js webpack bundling",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Started\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack.config.js",
+    "webpackdev": "webpack --config webpack.config.js --watch"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Proximity IO",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jquery-ajax-unobtrusive": "^3.2.4",
+    "jquery-match-height": "^0.7.2",
+    "jquery-validation": "^1.17.0",
+    "jquery-validation-unobtrusive": "^3.2.6",
+    "path": "^0.12.7",
+    "underscore": "^1.8.3",
+    "webpack": "^3.10.0"
+  }
+}
