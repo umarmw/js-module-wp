@@ -73,3 +73,5 @@ $(document).ready(function() {
     });
   }
 });
+
+export default Modal;

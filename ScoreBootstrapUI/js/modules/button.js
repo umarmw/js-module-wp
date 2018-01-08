@@ -71,3 +71,5 @@ $(document).ready(function() {
     });
   }
 });
+
+export default Button;

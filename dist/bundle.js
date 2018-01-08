@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(typeof self !== 'undefined' ? self : this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -10498,6 +10508,14 @@ window.jQuery === undefined || window.$ === undefined ? window.jQuery = window.$
 
 
 
+const MyScoreUILib = {
+  $,
+  Button: __WEBPACK_IMPORTED_MODULE_7__modules_button__["a" /* default */],
+  Modal: __WEBPACK_IMPORTED_MODULE_8__modules_modal__["a" /* default */]
+};
+/* harmony export (immutable) */ __webpack_exports__["MyScoreUILib"] = MyScoreUILib;
+
+
 $(document).ready(() => {
   console.log('Webpack Bundle eXeCuteD!');
 });
@@ -17208,6 +17226,8 @@ $(document).ready(function () {
     });
   }
 });
+
+/* harmony default export */ __webpack_exports__["a"] = (Button);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
@@ -17291,8 +17311,11 @@ $(document).ready(function () {
     });
   }
 });
+
+/* harmony default export */ __webpack_exports__["a"] = (Modal);
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ })
 /******/ ]);
+});
 //# sourceMappingURL=bundle.js.map

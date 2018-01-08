@@ -30,6 +30,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, outputFolderPath),
     filename: bundleName,
+    libraryTarget: 'umd'
   },
   devtool: 'source-map'
 };
