@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 let inputFolderPath = "ScoreBootstrapUI\\js\\";
 let outputFolderPath = "dist\\";
-let bundleName = "bundle.js";
+let bundleName = "lib.bundle.js";
 
 module.exports = {
   module: {
